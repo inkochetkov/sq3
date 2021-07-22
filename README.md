@@ -1,0 +1,3 @@
+# GO + sqllite
+
+# windows + gcc
