@@ -14,5 +14,13 @@ func main() {
 		log.Println(err)
 	}
 	defer db.Close()
-	log.Println("Test complite")
+
+	/*
+		sql1, _ := db.Prepare("INSERT INTO `user` (`name`, `password`, `hash`) VALUES('test1', 'test2', 'test3')")
+		tx, _ := db.Begin()
+		_, _ = tx.Stmt(sql1).Exec()
+		tx.Commit()
+		defer sql1.Close()
+	*/
+	log.Println("Complite")
 }
